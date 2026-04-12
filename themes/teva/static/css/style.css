@@ -69,7 +69,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .logo-img {
-  height: 52px;
+  height: 64px;
   width: auto;
   transition: opacity 0.2s;
 }
@@ -512,7 +512,7 @@ img { max-width: 100%; height: auto; }
   .site-nav.open { display: flex; }
   .site-nav a { padding: 0.75rem 1rem; }
 
-  .logo-img { height: 44px; }
+  .logo-img { height: 52px; }
 
   .hero { padding: 3rem 1.5rem; }
   .hero h1 { font-size: 1.75rem; }
