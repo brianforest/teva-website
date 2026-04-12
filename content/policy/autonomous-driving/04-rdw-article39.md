@@ -1,6 +1,6 @@
 ---
 title: "第四部分｜RDW Article 39：繞過法規天花板的唯一出口"
-author: "Chu Cheng-Kai / 產業政策部 / 社團法人台灣電動車協會（TEVA）"
+author: "Chu Cheng-Kai / 產業政策部 / 社團法人台灣電動車發展促進協會（TEVA）"
 series: "FSD 解鎖之路"
 series_part: "Part 4："
 weight: 5
@@ -345,4 +345,4 @@ Level 3 聽起來很美好。全世界也確實寄予厚望。有一家德國車
 *下一篇：第五部分——從 Level 3 到 Level 3+：全世界唯一的 Level 3 系統為什麼死了，以及台灣為什麼正在追趕一具屍體。*
 
 *本文為「FSD 解鎖之路」系列第四部分。*
-*作者：Chu Cheng-Kai / 產業政策部 / 社團法人台灣電動車協會（TEVA）*
+*作者：Chu Cheng-Kai / 產業政策部 / 社團法人台灣電動車發展促進協會（TEVA）*

@@ -1,6 +1,6 @@
 baseURL = 'https://tweva.org.tw/'
 languageCode = 'zh-TW'
-title = '社團法人台灣電動車協會 TEVA'
+title = '社團法人台灣電動車發展促進協會 TEVA'
 theme = 'teva'
 
 [params]

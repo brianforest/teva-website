@@ -1,6 +1,6 @@
 ---
 title: "第六部分｜Robotaxi：當車上不再有駕駛人，法律準備好了嗎？"
-author: "Chu Cheng-Kai / 產業政策部 / 社團法人台灣電動車協會（TEVA）"
+author: "Chu Cheng-Kai / 產業政策部 / 社團法人台灣電動車發展促進協會（TEVA）"
 series: "FSD 解鎖之路"
 series_part: "Part 6："
 weight: 7
@@ -323,4 +323,4 @@ Robotaxi 不是光譜上的下一個點。**它跳出了光譜。**
 *下一篇：第七部分——誰在擋路：制度的底層邏輯，如何決定了台灣的速度*
 
 *本文為「FSD 解鎖之路」系列第六部分。*
-*作者：Chu Cheng-Kai / 產業政策部 / 社團法人台灣電動車協會（TEVA）*
+*作者：Chu Cheng-Kai / 產業政策部 / 社團法人台灣電動車發展促進協會（TEVA）*
