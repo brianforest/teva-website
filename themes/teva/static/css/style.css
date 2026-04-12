@@ -63,15 +63,30 @@ img { max-width: 100%; height: auto; }
 }
 
 .site-logo {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--blue-900);
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+.site-logo:hover .logo-teva { color: var(--green-700); }
+.site-logo:hover .logo-text { color: var(--blue-700); }
+
+.logo-teva {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  background: linear-gradient(135deg, var(--green-500), var(--blue-800));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.logo-text {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--gray-700);
   letter-spacing: 0.02em;
 }
-.site-logo:hover { color: var(--green-600); }
-.site-logo span { color: var(--green-500); font-weight: 800; }
-
-.logo-img { height: 44px; width: auto; }
 
 /* Navigation */
 .site-nav { display: flex; gap: 0.25rem; }
@@ -509,6 +524,9 @@ img { max-width: 100%; height: auto; }
 
   .site-nav.open { display: flex; }
   .site-nav a { padding: 0.75rem 1rem; }
+
+  .logo-text { display: none; }
+  .logo-teva { font-size: 1.4rem; }
 
   .hero { padding: 3rem 1.5rem; }
   .hero h1 { font-size: 1.75rem; }
