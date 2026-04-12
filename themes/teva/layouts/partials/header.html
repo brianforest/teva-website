@@ -1,6 +1,6 @@
 <header class="site-header">
   <div class="header-inner">
-    <a href="/" class="site-logo"><span class="logo-teva">TEVA</span><span class="logo-text">台灣電動車發展促進協會</span></a>
+    <a href="/" class="site-logo"><img src="{{ "images/logo.png" | relURL }}" alt="TEVA 台灣電動車發展促進協會" class="logo-img"></a>
     <button class="menu-toggle" onclick="document.querySelector('.site-nav').classList.toggle('open')" aria-label="Toggle menu">&#9776;</button>
     <nav class="site-nav">
       {{ range .Site.Menus.main }}
