@@ -1,4 +1,4 @@
-baseURL = 'https://brianforest.github.io/teva-website/'
+baseURL = 'https://tweva.org.tw/'
 languageCode = 'zh-TW'
 title = '社團法人台灣電動車協會 TEVA'
 theme = 'teva'
