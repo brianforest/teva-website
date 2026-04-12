@@ -1,0 +1,44 @@
+baseURL = 'https://tweva.org.tw/'
+languageCode = 'zh-TW'
+title = '社團法人台灣電動車協會 TEVA'
+theme = 'teva'
+
+[params]
+  description = '推動台灣電動車產業發展與政策倡議'
+  author = 'TEVA 台灣電動車協會'
+  ogImage = '/images/og-default.jpg'
+
+[menu]
+  [[menu.main]]
+    name = '關於本協會'
+    url = '/about/'
+    weight = 1
+  [[menu.main]]
+    name = '相關活動'
+    url = '/events/'
+    weight = 2
+  [[menu.main]]
+    name = '產業政策'
+    url = '/policy/'
+    weight = 3
+  [[menu.main]]
+    name = '影音專區'
+    url = '/videos/'
+    weight = 4
+  [[menu.main]]
+    name = '聯絡我們'
+    url = '/contact/'
+    weight = 5
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+
+[outputs]
+  home = ['HTML']
+  section = ['HTML']
+  page = ['HTML']

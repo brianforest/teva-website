@@ -1,0 +1,39 @@
+{{ define "main" }}
+<div class="page-title">
+  <h1>{{ .Title }}</h1>
+  {{ with .Description }}<p>{{ . }}</p>{{ end }}
+</div>
+
+<div class="main-content">
+  <div class="content-narrow">
+    {{ if .Params.author }}
+    <div class="article-header">
+      <div class="article-author">{{ .Params.author }}</div>
+      {{ with .Date }}<div class="article-meta">{{ .Format "2006-01-02" }}</div>{{ end }}
+    </div>
+    {{ end }}
+
+    {{ with .Params.tldr }}
+    <div class="tldr">{{ . | markdownify }}</div>
+    {{ end }}
+
+    <div class="article-body">
+      {{ .Content }}
+    </div>
+
+    {{ if .Params.series }}
+    <div class="series-nav">
+      <h4>{{ .Params.series }}</h4>
+      <ul>
+        {{ $currentPage := . }}
+        {{ range where .Site.RegularPages "Params.series" .Params.series }}
+        <li{{ if eq .Permalink $currentPage.Permalink }} class="current"{{ end }}>
+          <a href="{{ .Permalink }}">{{ .Params.series_part }}{{ .Title }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

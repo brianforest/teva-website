@@ -1,0 +1,11 @@
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="site-logo">{{ if (fileExists "static/images/logo.png") }}<img src="/images/logo.png" alt="TEVA" class="logo-img">{{ else }}<span>TEVA</span> 台灣電動車協會{{ end }}</a>
+    <button class="menu-toggle" onclick="document.querySelector('.site-nav').classList.toggle('open')" aria-label="Toggle menu">&#9776;</button>
+    <nav class="site-nav">
+      {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}"{{ if $.IsMenuCurrent "main" . }} class="active"{{ end }}>{{ .Name }}</a>
+      {{ end }}
+    </nav>
+  </div>
+</header>
