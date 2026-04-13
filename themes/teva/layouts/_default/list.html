@@ -15,11 +15,24 @@
     {{ if .Pages }}
     <ul class="article-list">
       {{ range where (.Pages.ByWeight) ".Params.hidden" "ne" true }}
-      <li class="article-item">
+      {{ $isReleased := partial "is-released.html" . }}
+      <li class="article-item{{ if not $isReleased }} article-locked{{ end }}">
+        {{ if not $isReleased }}
+        {{/* Unreleased: not clickable, show date badge */}}
+        <div class="article-item-inner">
+          <h3>
+            {{ with .Params.series_part }}{{ . }}{{ end }}{{ .Title }}
+            <span class="publish-badge">{{ .Params.publish_date }} 開啟</span>
+          </h3>
+          {{ with .Params.tldr }}<p class="article-summary">{{ . }}</p>{{ end }}
+        </div>
+        {{ else }}
+        {{/* Released: clickable */}}
         <a href="{{ .Permalink }}">
           <h3>{{ with .Params.series_part }}{{ . }}{{ end }}{{ .Title }}</h3>
           {{ with .Params.tldr }}<p class="article-summary">{{ . }}</p>{{ end }}
         </a>
+        {{ end }}
       </li>
       {{ end }}
     </ul>

@@ -1,0 +1,11 @@
+{{/* Returns true if the page is released (manually or by date) */}}
+{{ $released := false }}
+{{ if eq .Params.released true }}
+  {{ $released = true }}
+{{ else if .Params.release_date }}
+  {{ $rd := time .Params.release_date }}
+  {{ if le $rd.Unix now.Unix }}
+    {{ $released = true }}
+  {{ end }}
+{{ end }}
+{{ return $released }}

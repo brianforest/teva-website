@@ -1,0 +1,61 @@
+{{ define "main" }}
+<div class="page-title">
+  <h1>{{ .Title }}</h1>
+  <p class="preview-warning">VIP 預覽版 — 請勿外傳</p>
+</div>
+
+<div class="main-content">
+  <div class="content-narrow">
+    {{/* Table of Contents */}}
+    {{ $section := .Site.GetPage "/policy/autonomous-driving" }}
+    {{ with $section }}
+    <nav class="preview-toc">
+      <h3>目錄</h3>
+      <ul>
+        {{ range .RegularPages.ByWeight }}
+        <li>
+          <a href="#article-{{ .File.ContentBaseName }}">
+            {{ with .Params.series_part }}{{ . }}{{ end }}{{ .Title }}
+          </a>
+          {{ $isReleased := partial "is-released.html" . }}
+          {{ if not $isReleased }}
+            <span class="publish-badge">{{ .Params.publish_date }} 開啟</span>
+          {{ end }}
+        </li>
+        {{ end }}
+      </ul>
+    </nav>
+
+    {{/* Full article content */}}
+    {{ range .RegularPages.ByWeight }}
+    <article id="article-{{ .File.ContentBaseName }}" class="preview-article">
+      <h2 class="preview-article-title">
+        {{ with .Params.series_part }}{{ . }}{{ end }}{{ .Title }}
+        {{ $isReleased := partial "is-released.html" . }}
+        {{ if not $isReleased }}
+          <span class="publish-badge">{{ .Params.publish_date }} 開啟</span>
+        {{ end }}
+      </h2>
+
+      {{ with .Params.author }}
+      <div class="article-author" style="margin-bottom: 1rem;">{{ . }}</div>
+      {{ end }}
+
+      {{ with .Params.tldr }}
+      <div class="tldr">{{ . | markdownify }}</div>
+      {{ end }}
+
+      <div class="article-body">
+        {{ .Content }}
+      </div>
+
+      <div style="text-align: center; margin: 3rem 0;">
+        <a href="#article-{{ .File.ContentBaseName }}" style="font-size: 0.85rem; color: var(--gray-500);">↑ 回到本篇開頭</a>
+      </div>
+      <hr style="margin: 3rem 0;">
+    </article>
+    {{ end }}
+    {{ end }}
+  </div>
+</div>
+{{ end }}

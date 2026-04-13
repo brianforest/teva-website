@@ -1,4 +1,42 @@
 {{ define "main" }}
+{{ $isReleased := partial "is-released.html" . }}
+{{ if not $isReleased }}
+{{/* Unreleased article: show coming-soon page */}}
+<div class="page-title">
+  <h1>{{ .Title }}</h1>
+</div>
+<div class="main-content">
+  <div class="content-narrow">
+    <div class="coming-soon">
+      <div class="coming-soon-icon">🔒</div>
+      <p class="coming-soon-date">本篇將於 <strong>{{ .Params.publish_date }}</strong> 開啟</p>
+      <p class="coming-soon-hint">「FSD 解鎖之路」系列每日連載中，敬請期待。</p>
+      <a href="{{ .Parent.Permalink }}" class="coming-soon-back">← 回到系列目錄</a>
+    </div>
+
+    {{ if .Params.series }}
+    <div class="series-nav">
+      <h4>{{ .Params.series }}</h4>
+      <ul>
+        {{ $currentPage := . }}
+        {{ range where .Site.RegularPages "Params.series" .Params.series }}
+        <li{{ if eq .Permalink $currentPage.Permalink }} class="current"{{ end }}>
+          {{ $navReleased := partial "is-released.html" . }}
+          {{ if not $navReleased }}
+          <span class="series-nav-locked">{{ .Params.series_part }}{{ .Title }} <span class="series-nav-badge">{{ .Params.publish_date }}</span></span>
+          {{ else }}
+          <a href="{{ .Permalink }}">{{ .Params.series_part }}{{ .Title }}</a>
+          {{ end }}
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+  </div>
+</div>
+
+{{ else }}
+{{/* Released article: full content */}}
 <div class="page-title">
   <h1>{{ .Title }}</h1>
   {{ with .Description }}<p>{{ . }}</p>{{ end }}
@@ -28,7 +66,12 @@
         {{ $currentPage := . }}
         {{ range where .Site.RegularPages "Params.series" .Params.series }}
         <li{{ if eq .Permalink $currentPage.Permalink }} class="current"{{ end }}>
+          {{ $navReleased := partial "is-released.html" . }}
+          {{ if not $navReleased }}
+          <span class="series-nav-locked">{{ .Params.series_part }}{{ .Title }} <span class="series-nav-badge">{{ .Params.publish_date }}</span></span>
+          {{ else }}
           <a href="{{ .Permalink }}">{{ .Params.series_part }}{{ .Title }}</a>
+          {{ end }}
         </li>
         {{ end }}
       </ul>
@@ -36,4 +79,5 @@
     {{ end }}
   </div>
 </div>
+{{ end }}
 {{ end }}
