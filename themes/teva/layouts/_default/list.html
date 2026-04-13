@@ -14,7 +14,7 @@
 
     {{ if .Pages }}
     <ul class="article-list">
-      {{ range .Pages.ByWeight }}
+      {{ range where (.Pages.ByWeight) ".Params.hidden" "ne" true }}
       <li class="article-item">
         <a href="{{ .Permalink }}">
           <h3>{{ with .Params.series_part }}{{ . }}{{ end }}{{ .Title }}</h3>
