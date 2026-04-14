@@ -2,6 +2,7 @@ baseURL = 'https://tweva.org.tw/'
 languageCode = 'zh-TW'
 title = '社團法人台灣電動車發展促進協會 TEVA'
 theme = 'teva'
+buildFuture = true
 
 [params]
   description = '推動台灣電動車產業發展與政策倡議'
@@ -18,8 +19,8 @@ theme = 'teva'
     url = '/events/'
     weight = 2
   [[menu.main]]
-    name = '產業政策'
-    url = '/policy/'
+    name = '自動駕駛法規推動'
+    url = '/policy/autonomous-driving/'
     weight = 3
   [[menu.main]]
     name = '產業評論'
