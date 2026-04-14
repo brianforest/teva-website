@@ -1,11 +1,20 @@
-{{/* Returns true if the page is released (manually or by date) */}}
-{{ $released := false }}
+{{/* Returns true if the page is released (default: true; locked only when explicitly set) */}}
+{{/* Logic:
+     - released: true                          → released
+     - released: false + release_date passed   → released (auto-unlock)
+     - released: false + release_date future   → locked
+     - released: false, no release_date        → locked
+     - no params                               → released (default)
+*/}}
+{{ $released := true }}
 {{ if eq .Params.released true }}
-  {{ $released = true }}
+  {{/* explicit unlock */}}
 {{ else if .Params.release_date }}
   {{ $rd := time .Params.release_date }}
-  {{ if le $rd.Unix now.Unix }}
-    {{ $released = true }}
+  {{ if gt $rd.Unix now.Unix }}
+    {{ $released = false }}
   {{ end }}
+{{ else if eq .Params.released false }}
+  {{ $released = false }}
 {{ end }}
 {{ return $released }}
