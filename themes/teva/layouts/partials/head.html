@@ -7,3 +7,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+
+{{/* GoatCounter analytics — privacy-friendly, no cookies. Excludes hidden/private pages. */}}
+{{ if not .Params.hidden }}
+<script data-goatcounter="https://tweva.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+{{ end }}
