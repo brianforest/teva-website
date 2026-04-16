@@ -1,6 +1,6 @@
 ---
 title: "第七部分｜誰在擋路：制度的底層邏輯，如何決定了台灣的速度"
-author: "Chu Cheng-Kai / 產業政策部 / 社團法人台灣電動車發展促進協會（TEVA）"
+author: "Chu Cheng-Kai / 產業政策組 / 社團法人台灣電動車發展促進協會（TEVA）"
 series: "FSD 解鎖之路"
 series_part: "Part 7："
 weight: 8
@@ -301,4 +301,4 @@ Tesla FSD 的版本迭代是**以月計算**的。V12、V13、V14——每一次
 *下一篇：第八部分——台灣的十字路口*
 
 *本文為「FSD 解鎖之路」系列第七部分。*
-*作者：Chu Cheng-Kai / 產業政策部 / 社團法人台灣電動車發展促進協會（TEVA）*
+*作者：Chu Cheng-Kai / 產業政策組 / 社團法人台灣電動車發展促進協會（TEVA）*
