@@ -5,8 +5,8 @@ series: "FSD 解鎖之路"
 series_part: "Part 7："
 weight: 8
 released: false
-publish_date: "4月21日"
-release_date: 2026-04-21T00:00:00+08:00
+publish_date: "4月23日"
+release_date: 2026-04-23T00:00:00+08:00
 tldr: "台灣慢不是因為人的問題——是正面表列 + 型式認證 + 大陸法系的三重枷鎖，讓制度本身就會產生阻力。但日本和韓國證明了：DNA 不是命運。"
 ---
 > **本篇重點概念**

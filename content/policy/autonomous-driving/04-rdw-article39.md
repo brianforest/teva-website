@@ -5,8 +5,8 @@ series: "FSD 解鎖之路"
 series_part: "Part 4："
 weight: 5
 released: false
-publish_date: "4月18日"
-release_date: 2026-04-18T00:00:00+08:00
+publish_date: "4月20日"
+release_date: 2026-04-20T00:00:00+08:00
 tldr: "2026 年 4 月 10 日，荷蘭 RDW 正式核准 Tesla FSD 的 Article 39 申請——用十七個月做完台灣七年做不到的事。鑰匙已經轉動，門已經打開。台灣的 MR14-04 已裝了鎖孔，但三道關卡讓它形同虛設。"
 ---
 

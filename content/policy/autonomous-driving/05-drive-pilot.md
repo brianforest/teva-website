@@ -5,8 +5,8 @@ series: "FSD 解鎖之路"
 series_part: "Part 5："
 weight: 6
 released: false
-publish_date: "4月19日"
-release_date: 2026-04-19T00:00:00+08:00
+publish_date: "4月21日"
+release_date: 2026-04-21T00:00:00+08:00
 tldr: "全世界唯一量產 Level 3 系統已經商業退場，國際社會全面轉向 Safety Case——台灣卻要到 2031 年才全面適用那套被放棄的框架。"
 ---
 > **本篇重點概念**

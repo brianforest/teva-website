@@ -5,8 +5,8 @@ series: "FSD 解鎖之路"
 series_part: "Part 6："
 weight: 7
 released: false
-publish_date: "4月20日"
-release_date: 2026-04-20T00:00:00+08:00
+publish_date: "4月22日"
+release_date: 2026-04-22T00:00:00+08:00
 tldr: "美國和中國的 Robotaxi 已在城市運營，台灣連「沒有駕駛人的車出事誰負責」的法律都沒有。"
 ---
 > **本篇重點概念**

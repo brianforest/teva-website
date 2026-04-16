@@ -5,8 +5,8 @@ series: "FSD 解鎖之路"
 series_part: "Part 8："
 weight: 9
 released: false
-publish_date: "4月22日"
-release_date: 2026-04-22T00:00:00+08:00
+publish_date: "4月24日"
+release_date: 2026-04-24T00:00:00+08:00
 tldr: "台灣不需要發明新東西。路徑是清楚的、工具是現成的、阻力是可以克服的——但時間窗口正在關閉。"
 ---
 > **本篇重點概念**
