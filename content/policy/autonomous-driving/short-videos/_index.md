@@ -7,7 +7,7 @@ sitemap_exclude: true
 
 > ⚠️ **本頁面僅供合作夥伴內部使用，不公開於官網導覽。**
 >
-> 直接連結：`https://tweva.org.tw/policy/autonomous-driving/short-videos/`
+> 直接連結：`https://eva.org.tw/policy/autonomous-driving/short-videos/`
 
 ---
 
