@@ -139,10 +139,25 @@ Tesla FSD 的版本迭代是**以月計算**的。V12、V13、V14——每一次
 
 |  | 型式認證（政府審） | 自我認證（廠商自審） |
 |---|---|---|
-| **Prescriptive 規定式** | 傳統 UNECE：R79、R171 | FMVSS 傳統領域 |
-| **Safety Case 安全論證** | **RDW Article 39、L3+ ADS GTR** | — |
+| **Prescriptive 規定式** | 傳統 UNECE：R79、R171、R157 | FMVSS 傳統領域 |
+| **Safety Case 安全論證** | **RDW Article 39、L3+ ADS GTR** | **FMVSS：AV STEP、ADS 框架（NHTSA 正在建構中）**<br>目前「法無禁止即自由」 |
 
-台灣不需要翻轉整張表——從左上角跳到右下角。台灣需要做的，是**在左邊那一欄裡往下移一格**：維持型式認證，但把審查方法從 prescriptive 升級為 Safety Case。
+右下角那一格，過去是空的——美國聯邦層級目前沒有專屬的 ADS 法規。FSD、Robotaxi 靠的是 FMVSS 的一般適用、NHTSA 的豁免信、加上州級運營許可。但「空」不代表「不存在」——它代表「正在建構」。
+
+最強的訊號不在美國國內，而在日內瓦。**L3+ ADS GTR 由 NHTSA 共同主導起草。** 那個坐在矩陣左下角、讓歐盟從 prescriptive 走向 Safety Case 的國際法規——它的 DNA 有一半來自美國。美國親手把 Safety Case 方法論寫進了 UNECE 體系。
+
+這件事透露了美國的方向：**程序上仍然是 self-certification——這是海洋法系的憲法層級 DNA，不會變。但方法論上從 prescriptive 升級為 Safety Case。** NHTSA 推動的 AV STEP（Automated Vehicle Transparency and Engagement for Safe Testing）框架就是這個邏輯：廠商提交完整的安全論證，政府不做事前審查，但驗證論證的嚴謹性，持續監控運行數據。
+
+於是未來世界的樣貌就清楚了：
+
+- **歐盟**：型式認證 + Safety Case（政府照審，但改用整體安全論證）
+- **美國**：self-certification + Safety Case（廠商照自審，但舉證方法升級）
+
+**兩大法系在 Safety Case 這一欄匯流。** 它們保留了各自的程序 DNA，但在方法論上殊途同歸。Safety Case 不是歐盟的產物，也不是美國的產物——它是全球汽車產業面對 AI 時代的共同答案。
+
+台灣的處境因此變得清楚：卡在矩陣的左上角（prescriptive + 型式認證），不只是跟不上歐盟，也不只是跟不上美國——是**兩邊都跟不上**。
+
+但也因此看到了出路。台灣不需要翻轉整張表——從左上角跳到右下角，改變法系 DNA。台灣需要做的，是**在左邊那一欄裡往下移一格**：維持型式認證的程序，但把審查方法從 prescriptive 升級為 Safety Case。這條路歐盟已經走了，RDW Article 39 是活生生的案例。
 
 正面表列和型式認證經常共生——它們是大陸法系 DNA 下最自然的預設組合。但它們可以拆開調整。**大陸法系的 DNA 決定了法規怎麼寫（正面表列）和誰來執行（型式認證）——但不決定用什麼方法審查。** RDW 的 Article 39 就是在型式認證的框架內，繞過正面表列的限制。
 
