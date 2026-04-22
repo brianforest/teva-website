@@ -5,6 +5,7 @@ on:
     branches: [main]
   schedule:
     - cron: '0 16 * * *'  # UTC 16:00 = Taiwan midnight (auto-unlock articles)
+  workflow_dispatch:  # manual trigger + Cloudflare Worker cron fallback
 
 permissions:
   contents: read
