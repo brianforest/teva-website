@@ -140,11 +140,11 @@ Tesla FSD 的版本迭代是**以月計算**的。V12、V13、V14——每一次
 |  | UNECE 型式認證（政府審） | FMVSS 自我認證（廠商自審） |
 |---|---|---|
 | **Prescriptive 規定式** | R79、R171、R157 | 傳統車輛標準領域<br>（碰撞承受力、安全帶、車燈等） |
-| **Safety Case 安全論證** | **RDW Article 39**<br>**L3+ ADS GTR（NHTSA 共同主導起草）** | **AV STEP 安全論證框架（NHTSA 正在建構中）**<br>現階段以「法無禁止即自由」原則支撐 FSD 與 Robotaxi 的商業運營 |
+| **Safety Case 安全論證** | **RDW Article 39**<br>**L3+ ADS GTR（美國發起 sponsor，六方共同起草）** | **AV STEP 安全論證框架（NHTSA 正在建構中）**<br>現階段以「法無禁止即自由」原則支撐 FSD 與 Robotaxi 的商業運營 |
 
 右下角那一格，過去是空的——美國聯邦層級目前沒有專屬的 ADS 法規。FSD、Robotaxi 靠的是 FMVSS 的一般適用、NHTSA 的豁免信、加上州級運營許可。但「空」不代表「不存在」——它代表「正在建構」。
 
-最強的訊號不在美國國內，而在日內瓦。**L3+ ADS GTR 由 NHTSA 共同主導起草。** 那個坐在矩陣左下角、讓歐盟從 prescriptive 走向 Safety Case 的國際法規——它的 DNA 有一半來自美國。美國親手把 Safety Case 方法論寫進了 UNECE 體系。
+最強的訊號不在美國國內，而在日內瓦。**L3+ ADS GTR 由美國發起 sponsor，NHTSA 坐進 GRVA 副主席與 IWG 核心領導席位，與加拿大、中國、歐盟、英國、日本共同起草。** 那個坐在矩陣左下角、讓歐盟從 prescriptive 走向 Safety Case 的國際法規——**它的 DNA 有一半來自美國**。美國親手把 Safety Case 方法論寫進了 UNECE 體系。
 
 這件事透露了美國的方向：**程序上仍然是 self-certification——這是海洋法系的憲法層級 DNA，不會變。但方法論上從 prescriptive 升級為 Safety Case。** NHTSA 推動的 AV STEP（Automated Vehicle Transparency and Engagement for Safe Testing）框架就是這個邏輯：廠商提交完整的安全論證，政府不做事前審查，但驗證論證的嚴謹性，持續監控運行數據。
 
